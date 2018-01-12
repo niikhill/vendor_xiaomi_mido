@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -1115,3 +1115,23 @@ PRODUCT_PACKAGES += \
     qcrilhook \
     qti-telephony-common \
     telephony-ext
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/mido/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/xiaomi/mido/proprietary/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/xiaomi/mido/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:system/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
+    vendor/xiaomi/mido/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:system/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-impl.so:system/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-impl.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:system/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-impl.so:system/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-impl.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so
+
+PRODUCT_PACKAGES += \
+    com.qualcomm.qti.bluetooth_audio@1.0 \
+    vendor.qti.hardware.fm@1.0
